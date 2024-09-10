@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog - Studio Diva</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Studio Diva</a>
+            </div>
+            <div class="menu-hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Bem-vindo ao Blog do Studio Diva</h1>
+            <p>Dicas, novidades e tendências de beleza para você se inspirar!</p>
+        </div>
+    </section>
+</main>
+
+
+        <!-- Seção de Posts -->
+        <section class="blog-section">
+            <div class="blog-container">
+                <article class="blog-post">
+                    <img src="img/post1.jpg" alt="Cabelos cuidados">
+                    <h2>Cabelos Brilhantes: Dicas e Cuidados</h2>
+                    <p>Mantenha seus cabelos sempre radiantes com essas dicas simples de cuidados diários...</p>
+                    <a href="#" class="btn">Leia mais</a>
+                </article>
+                <article class="blog-post">
+                    <img src="img/post2.png" alt="Maquiagem perfeita">
+                    <h2>Maquiagem Perfeita em 5 Passos</h2>
+                    <p>Aprenda como fazer uma maquiagem incrível e natural com esses 5 passos rápidos...</p>
+                    <a href="#" class="btn">Leia mais</a>
+                </article>
+                <article class="blog-post">
+                    <img src="img/post3.jpg" alt="Unhas bem cuidadas">
+                    <h2>Unhas Impecáveis: Dicas de Manicure</h2>
+                    <p>Descubra como cuidar das suas unhas e manter elas lindas por mais tempo...</p>
+                    <a href="#" class="btn">Leia mais</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="#" class="logo">Studio Diva</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+<script>
+        const hamburger = document.querySelector('.menu-hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+
+</body>
+</html>
